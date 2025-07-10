@@ -11,6 +11,7 @@ body {
 
 #hero {
 	max-height: 920px;
+	height: 90vh;
 }
 
 /* Custom Cursor */
@@ -73,6 +74,11 @@ body {
 	.cursor {
 		display: none;
 	}
+
+	#hero {
+		height: 80vh;
+	}
+
 	body {
 		cursor: auto;
 	}
