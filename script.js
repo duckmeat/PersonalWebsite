@@ -86,7 +86,17 @@ document.addEventListener("DOMContentLoaded", () => {
 	document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 		anchor.addEventListener("click", function (e) {
 			e.preventDefault();
-			gsap.to(window, { duration: 1.5, scrollTo: this.getAttribute("href"), ease: "power2.inOut" });
+
+			// Check if it's not a mobile-sized screen
+			if (window.innerWidth > 768) {
+				gsap.to(window, { duration: 1.5, scrollTo: this.getAttribute("href"), ease: "power2.inOut" });
+			} else {
+				// On mobile, just jump to the anchor
+				const target = document.querySelector(this.getAttribute("href"));
+				if (target) {
+					target.scrollIntoView();
+				}
+			}
 		});
 	});
 
