@@ -68,3 +68,12 @@ body {
 		padding-right: 90px;
 	}
 } */
+
+@media (max-width: 768px) {
+	.cursor {
+		display: none;
+	}
+	body {
+		cursor: auto;
+	}
+}
