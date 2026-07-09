@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	// --- Typed hero eyebrow ---
 	const typedEl = document.getElementById("typed-line");
-	const typedText = 'dataLayer.push({ event: "portfolio_view" })';
+	const typedText = 'utag_data.push({ customer_name: "Thomas Mathiasen" })';
 
 	if (typedEl) {
 		if (reducedMotion) {
