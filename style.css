@@ -186,10 +186,6 @@ button {
 	margin: 0 0 3rem;
 }
 
-/* Removes bottom margin on selected section headlines */
-.section-label-margin.section-label-flush {
-	margin-bottom: 0;
-}
 
 /* Section labels as clean headlines */
 .section-label-no-margin {
